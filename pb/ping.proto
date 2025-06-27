@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+option go_package = "grpc-load-balance-test/pb";
+
+package pb;
+
+service Pinger {
+  rpc Ping (Empty) returns (Empty) {}
+}
+
+message Empty {}
